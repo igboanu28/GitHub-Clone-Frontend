@@ -1,5 +1,16 @@
 <mat-toolbar class="navbar">
-  
+  <button [matMenuTriggerFor]="menu">
+    <fa-icon [icon]="faBars" />
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item routerLink="home">Home</a>
+    <a mat-menu-item routerLink="issues">Issues</a>
+    <a mat-menu-item routerLink="requests">Pull requests</a>
+    <a mat-menu-item routerLink="projects">Projects</a>
+    <a mat-menu-item routerLink="discussions">Discussions</a>
+    <a mat-menu-item>Codespaces</a>
+    <a mat-menu-item>Copilot</a>
+  </mat-menu>
   <span>My App</span>
   <span class="navbar-spacer"></span>
   <button
