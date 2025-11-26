@@ -1,0 +1,23 @@
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  background-color: #010409;
+  color: #f0f6fc;
+}
+
+.navbar-icon {
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.navbar-icon:hover {
+  color: red;
+  border: none !important;
+}
+
+.navbar-icon:active {
+  opacity: 0.8;
+  border-radius: none;
+}
